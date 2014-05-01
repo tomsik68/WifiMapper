@@ -1,0 +1,10 @@
+[
+	{
+		"time": "`date`",
+		"position": "lots of weird code starting with GP*"
+	},
+	{
+		"time": "`date`",
+		"position": "tail --lines 6 /dev/rfcomm0"
+	}
+]
