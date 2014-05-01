@@ -1,0 +1,20 @@
+{
+	"captureName": "MyCapture",
+	"description": "This capture was recorded using OpenPandora system",
+	"mapper": {
+		"name": "Official OpenPandora mapper",
+		"platform": "OpenPandora",
+		"version": "0.0.0"
+	},
+	"startDate": "`date`",
+	"endDate": "`date`",
+	"files": {
+		"spots-index": "spots.json",
+		"route": "route.json",
+		"spots-in-time": "spots-in-time.json"
+	},
+	"metadata":
+	{
+		"additional custom data": "comes here"
+	}
+}

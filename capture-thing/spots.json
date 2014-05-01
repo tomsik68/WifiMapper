@@ -1,0 +1,28 @@
+{
+	"uuid": {
+		"BSSID": "00:00:00:00:00:00"
+		"Channel": "6",
+		"Frequency": "2.437 GHz (Channel 6)",
+		"Quality": "45/70",
+		"Signal Level": "-65 dBm",
+		"Encryption key": "on",
+		"ESSID": "Hotspot",
+		"Bit Rates": [
+			"1 Mb/s", "2 Mb/s", "5.5 Mb/s", "11 Mb/s","9 Mb/s","18 Mb/s", "36 Mb/s", "54 Mb/s"
+		],
+		"Mode": "master",
+		"Extras": [
+			"tsf=0123456789"
+			"Last Beacon: 589ms ago",
+		],
+		"IEs": [
+			"Unknown": "12302341654asd65a1",
+			"IEEE 802.11i/WPA2 Version 1": {
+				"Group Cipher": "CCMP",
+				"Pairwise Ciphers (1)": "CCMP",
+				"Authentication Suites (1)": "PSK"
+			}
+		]
+		
+	}
+}
