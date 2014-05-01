@@ -1,0 +1,28 @@
+wlan0     Scan completed :
+          Cell 01 - Address: 54:04:A6:D2:D1:D4
+                    Channel:6
+                    Frequency:2.437 GHz (Channel 6)
+                    Quality=47/70  Signal level=-63 dBm  
+                    Encryption key:on
+                    ESSID:"Hermes"
+                    Bit Rates:1 Mb/s; 2 Mb/s; 5.5 Mb/s; 11 Mb/s; 9 Mb/s
+                              18 Mb/s; 36 Mb/s; 54 Mb/s
+                    Bit Rates:6 Mb/s; 12 Mb/s; 24 Mb/s; 48 Mb/s
+                    Mode:Master
+                    Extra:tsf=000002908c90170d
+                    Extra: Last beacon: 22000ms ago
+                    IE: Unknown: 00064865726D6573
+                    IE: Unknown: 010882848B961224486C
+                    IE: Unknown: 030106
+                    IE: Unknown: 2A0104
+                    IE: Unknown: 32040C183060
+                    IE: Unknown: 2D1AEE1116FF00000001000000000000000000000000000000000000
+                    IE: Unknown: 3D1606000600000000000000000000000000000000000000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    IE: Unknown: DD180050F2020101000003A4000027A4000042435E0062322F00
+                    IE: Unknown: 0B0505000F127A
+                    IE: Unknown: DD07000C4300000000
+                    IE: Unknown: 0706474220010D10

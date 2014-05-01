@@ -10,11 +10,10 @@
 	"endDate": "`date`",
 	"files": {
 		"spots-index": "spots.json",
-		"route": "route.json",
+		"route": "route",
 		"spots-in-time": "spots-in-time.json"
 	},
-	"metadata":
-	{
+	"metadata": {
 		"additional custom data": "comes here"
 	}
 }

@@ -20,5 +20,4 @@ for line in interfacesOut.split('\n'):
     if len(line) > 0 and not line.startswith(' ') and line.find(NO_WIFI_EXTENSIONS) < 0:
         interfaces.append(line[0:line.index(' ')])
 
-for interface in interfaces:
-    print interface
+print interfaces[0]
