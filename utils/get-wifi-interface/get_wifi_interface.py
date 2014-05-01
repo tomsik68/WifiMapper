@@ -5,8 +5,6 @@ import subprocess
 def iwconfigCommand():
     return ['iwconfig']
 
-def iwlistScanCommand(interface):
-    return ['iwlist',interface,'scanning']
 
 NO_WIFI_EXTENSIONS='no wireless extensions'
 
