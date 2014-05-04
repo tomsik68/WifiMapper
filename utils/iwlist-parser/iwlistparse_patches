@@ -1,27 +1,24 @@
---- iwlistparse2.py	2014-05-01 10:09:03.000000000 +0200
-+++ iwlistparse2_patch.py	2014-05-01 10:13:01.627354341 +0200
-@@ -14,8 +14,8 @@
- 
+--- iwlistparse2.py	2014-05-04 17:16:27.872341615 +0200
++++ iwlistparse2_cp.py	2014-05-04 17:17:29.692340738 +0200
+@@ -15,6 +15,7 @@
  # Source of original version: https://bbs.archlinux.org/viewtopic.php?id=88967
  
--
--
-+# iwlist-parser
+ 
 +# Modified by Tomsik68 to work with Wifi-Mapper. Tomsik68 takes no credit for this file. Original authors' licenses apply!
  
+ 
  import sys
- import re
-@@ -234,4 +234,26 @@
+@@ -234,4 +235,25 @@
  
      print_cells(parsed_cells)
  
 -main()
 +# Begin: tomsik68's patches (modified main to return list of the cells)
-+def getCells(iwList):
++def getCells(iwListLines):
 +    cells=[[]]
 +    parsed_cells=[]
 +
-+    for line in iwList:
++    for line in iwListLines:
 +        cell_line = match(line,"Cell ")
 +        if cell_line != None:
 +            cells.append([])
