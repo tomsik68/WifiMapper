@@ -1,11 +1,11 @@
-import subprocess, json, sys, iwlistparse2
+import subprocess, json, sys, iwlistparse
 jsonSpots = json.load(open('spots.json'))
 interface = sys.argv[1]
 
 measurementNumber = sys.argv[2]
 
 iwList = subprocess.check_output(['iwlist', interface, 'scanning'])
-cellsList = iwlistparse2.getCells(iwList.split('\n'))
+cellsList = iwlistparse.getCells(iwList.split('\n'))
 for cell in cellsList:
 	if not cell["Address"] in jsonSpots:
 		cell["FirstSeen"] = measurementNumber

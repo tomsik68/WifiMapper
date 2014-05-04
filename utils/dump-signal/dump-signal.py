@@ -1,4 +1,4 @@
-import subprocess, json, sys, iwlistparse2
+import subprocess, json, sys, iwlistparse
 jsonCaptures = json.load(open('spots-in-time.json'))
 interface = sys.argv[1]
 measurementNumber = sys.argv[2]
@@ -10,7 +10,7 @@ def filterList(spots):
 	return result
 
 iwList = subprocess.check_output(['iwlist', interface, 'scanning'])
-spots = iwlistparse2.getCells(iwList.split('\n'))
+spots = iwlistparse.getCells(iwList.split('\n'))
 
 capture = {}
 capture["id"] = measurementNumber
