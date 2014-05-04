@@ -3,7 +3,7 @@
 # Usage: sh setup.sh <DESTINATION FOLDER>
 
 # Variables
-LINK="https://github.com/tomsik68/WifiMapper/archive/master.zip"
+LINK="https://codeload.github.com/tomsik68/WifiMapper/zip/master"
 DEST=$1
 MAPPER="openpandora"
 # Make sure $DEST holds absolute path
@@ -19,7 +19,7 @@ mkdir "tmp"
 # Download the newest version from github & unzip it
 cd "tmp"
 echo "Downloading latest version of WifiMapper from github..."
-wget -q -O "repo.zip" $LINK
+curl -k -o "repo.zip" $LINK
 echo "Extracting repo.zip..."
 unzip repo.zip
 cd ..
