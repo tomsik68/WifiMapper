@@ -18,7 +18,7 @@
 -main()
 +# Begin: tomsik68's patches (modified main to return list of the cells)
 +def getCells():
-+	cells=[[]]
++    cells=[[]]
 +    parsed_cells=[]
 +
 +    for line in sys.stdin:
