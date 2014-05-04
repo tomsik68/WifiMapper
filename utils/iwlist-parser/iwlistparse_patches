@@ -17,11 +17,11 @@
  
 -main()
 +# Begin: tomsik68's patches (modified main to return list of the cells)
-+def getCells():
++def getCells(iwList):
 +    cells=[[]]
 +    parsed_cells=[]
 +
-+    for line in sys.stdin:
++    for line in iwList:
 +        cell_line = match(line,"Cell ")
 +        if cell_line != None:
 +            cells.append([])
@@ -36,6 +36,5 @@
 +    sort_cells(parsed_cells)
 +
 +    return parsed_cells
-+#main()
 +
 +# End: tomsik68's patches
