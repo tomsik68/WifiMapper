@@ -15,7 +15,6 @@ def matchLineAddToArray(line, pattern, key, cell):
             cell[key] = []
         toAdd = []
         for group in match.groups():
-            print group
             toAdd.append(group.replace('\n','').replace(';',''))
         cell[key].extend(toAdd)
         
@@ -29,7 +28,7 @@ def getCells(iwlistLines):
                 cells.append(cellData)
             cellData = {}
             cellData["CellNumber"] = cellMatch.group(1)
-            cellData["BSSID"] = cellMatch.group(2)
+            cellData["Address"] = cellMatch.group(2)
         matchLine(line, r'Channel:(\d*)', {1:"Channel"}, cellData)
         matchLine(line, r'Frequency:([\w.\s]*)', {1:"Frequency"}, cellData)
         matchLine(line, r'Quality=(\d*)/(\d*)', {1:"Quality", 2:"MaxQuality"}, cellData)
