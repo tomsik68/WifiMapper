@@ -13,6 +13,10 @@ for line in sys.stdin:
 strDate = time.strftime('%d/%m/%y')
 strTime = time.strftime('%H:%M:%S')
 routeObj = {
-"lat": latitude, "lng": longtitude, "date": strDate, "time": strTime}
+	"lat": latitude, 
+	"lng": longtitude,
+	"date": strDate,
+	"time": strTime
+}
 route.append(routeObj)
 json.dump('route.json', route)

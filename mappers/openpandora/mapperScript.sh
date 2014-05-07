@@ -1,13 +1,12 @@
 # This script is part of WifiMapper project
 
 GPS_INTERFACE=`cat gps_interface`
-ROUTE_FILE="route.csv"
+ROUTE_FILE="route.json"
 INTERVAL=3 # second(s)
 
 echo "This is mapper script of WifiMapper project. Please read manual before using it."
 echo "Moving captured files..."
-
-CAPDIR="capture-${RANDOM}"
+CAPDIR=capture-${RANDOM}
 mkdir $CAPDIR
 mv $ROUTE_FILE $CAPDIR
 mv spots-in-time.json $CAPDIR
