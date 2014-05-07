@@ -25,7 +25,7 @@ MEASUREMENT=1
 while [ 0 -lt 1 ]; do
   python dump-spots.py $WIFI_INTERFACE $MEASUREMENT
   python dump-signal.py $WIFI_INTERFACE $MEASUREMENT
-  GPS_DUMP=`gpspipe -w -n 3`
+  GPS_DUMP=`gpspipe -w -n 6` # 1 in 6 lines should be position
   GPS_COORDS=`echo "$GPS_DUMP" | python coordsdump.py`
   MEASUREMENT=$((MEASUREMENT+1))
   #sleep $INTERVAL

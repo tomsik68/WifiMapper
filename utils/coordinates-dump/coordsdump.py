@@ -19,4 +19,4 @@ routeObj = {
 	"time": strTime
 }
 route.append(routeObj)
-json.dump(route, open('route.json'))
+json.dump(route, open('route.json','w'))
