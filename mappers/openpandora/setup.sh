@@ -17,20 +17,18 @@ UTILS="dump-signal dump-spots get-wifi-interface iwlist-parser coordinates-dump"
 mkdir $DEST
 REPODIR=$(pwd)/../..
 if [ $2 == "download" ] ; then
-  mkdir "tmp"
+  mkdir "$DEST/tmp"
   # Download the newest version from github & unzip it
-  cd "tmp"
+  cd "$DEST/tmp"
   echo "Downloading latest version of WifiMapper from github..."
   curl -k -o "repo.zip" $LINK
   echo "Extracting repo.zip..."
   unzip repo.zip
-  cd ..
   REPODIR="${DEST}/tmp/WifiMapper-master"
 fi
 # Copy all scripts from mapper
 echo "Copying scripts..."
-cd $REPODIR
-cp mappers/$MAPPER/* $DEST
+cp $REPODIR/mappers/$MAPPER/* $DEST
 echo "Copying utilities..."
 # Copy files of needed utilities
 for UTIL in $UTILS ; do

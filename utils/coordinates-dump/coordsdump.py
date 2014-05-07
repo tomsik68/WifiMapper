@@ -1,6 +1,6 @@
 import sys, json, time
 
-route = json.load('route.json')
+route = json.load(open('route.json'))
 
 latitude = ""
 longtitude = ""
@@ -19,4 +19,4 @@ routeObj = {
 	"time": strTime
 }
 route.append(routeObj)
-json.dump('route.json', route)
+json.dump(route, open('route.json'))
