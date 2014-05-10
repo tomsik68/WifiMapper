@@ -1,0 +1,7 @@
+/renderers/openlayers/.project
+/renderers/openlayers/theme
+/renderers/openlayers/img
+/renderers/openlayers/OpenLayers.js
+*.secret
+captures/*
+pre_peta/*
