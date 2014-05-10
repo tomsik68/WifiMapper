@@ -21,7 +21,7 @@ Mappers are currently available on following platforms:
 
 Renderers currently available:
 
-+ Google Maps-based web renderer
++ [OpenLayers-based](http://www.openlayers.org) web renderer
 
 ## License
 
