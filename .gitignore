@@ -1,3 +1,5 @@
+/renderers/GeoJSON/*.json
+/renderers/GeoJSON/*.geojson
 /renderers/openlayers/convert/*.geojson
 /renderers/openlayers/convert/*.json
 /renderers/openlayers/.project
