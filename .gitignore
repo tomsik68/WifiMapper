@@ -1,3 +1,5 @@
+/renderers/openlayers/convert/*.geojson
+/renderers/openlayers/convert/*.json
 /renderers/openlayers/.project
 /renderers/openlayers/theme
 /renderers/openlayers/img
@@ -5,3 +7,8 @@
 *.secret
 captures/*
 pre_peta/*
+renderers/openlayers/images
+renderers/openlayers/leaflet.css
+renderers/openlayers/leaflet.js
+renderers/openlayers/leaflet.css
+renderers/openlayers/leaflet.js
