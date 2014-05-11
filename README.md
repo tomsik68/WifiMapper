@@ -15,13 +15,21 @@ This project is split up into mappers & renderers.
 
 Mappers are currently available on following platforms:
 
-+ Linux (more specifically [OpenPandora](http://openpandora.org) )
++ Linux
 
 ## Renderers
 
 Renderers currently available:
 
-+ [OpenLayers-based](http://www.openlayers.org) web renderer
++ GeoJSON "renderer" (this only creates GeoJSON files from your measurements)
+
+## Work-In-Progress
+
++ OpenLayers web (Renderer)
+
+## Plans
+
++ Android (Mapper+Renderer)
 
 ## License
 

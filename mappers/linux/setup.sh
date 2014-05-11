@@ -1,12 +1,12 @@
 # This script is part of WifiMapper project
-# This setup script will setup OpenPandora mapper
+# This setup script will setup Linux mapper
 # Usage: sh setup.sh <DESTINATION FOLDER> [download]
 
 # Variables
 LINK="https://codeload.github.com/tomsik68/WifiMapper/zip/master"
 DEST=$1
 # Mapper to install
-MAPPER="openpandora"
+MAPPER="linux"
 # Make sure $DEST holds absolute path
 if [[ $DEST != /* ]]; then
   DEST=`pwd`/$DEST
