@@ -21,10 +21,10 @@ spots = json.load(open('spots.json'))
 spotsInTime = json.load(open('spots-in-time.json'))
 
 myNumber = 0
-polyPointsPerSpot = 6
+polyPointsPerSpot = 5
 # feel free to play with these parameters, they're just approximate...
-signalPerLat = 1.0/200002.0
-signalPerLng = 1.0/200002.0
+signalPerLat = 1.0/119999.0
+signalPerLng = 1.0/119999.0
 
 points = {}
 for point in route:
@@ -45,11 +45,11 @@ for spot in points.keys():
         for point in points[spot]:
                 signal = abs(int(point[2]["Signal"]))
                 pointsInPolygon = []
-                ang = 0
-                while ang < 360:
+                ang = -180
+                while ang < 180:
                         ang += 360.0/polyPointsPerSpot
                         rad = math.radians(ang)
-                        pointsInPolygon.append([point[1]+signal*signalPerLng*math.sin(ang), point[0]+signalPerLat*math.cos(ang)*signal])
+                        pointsInPolygon.append([point[1]+signal*signalPerLng*math.sin(rad), point[0]+signalPerLat*math.cos(rad)*signal])
                 polygons.append(pointsInPolygon)
         # drop points that other polygon(s) contain
         finalPoints = []
@@ -66,7 +66,7 @@ for spot in points.keys():
         if spots[spot].has_key("ESSID"):
                 essid = spots[spot]["ESSID"]
         polygonFeature = {"type": "Feature", "properties": {'addr': spot, 'ESSID':essid, 'Encryption': spots[spot]["EncryptionKey"],'spotInfo': spots[spot]}, "geometry": {"type": "Polygon", "coordinates": [finalPoints]}}
-        if len(finalPoints) > 4:
+        if len(finalPoints) > 2:
                 geoJSON["features"].append(polygonFeature)
         
 json.dump(geoJSON, open('spotMap.geojson', 'w'))
